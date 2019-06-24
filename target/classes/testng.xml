@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="POM Test Automation">
+<test name="POM Test">
+<classes>
+	<class name="com.zohocrm.qa.testcases.LoginPageTest	"></class>
+	<class name="com.zohocrm.qa.testcases.HomePageTest"></class>
+	<class name="com.zohocrm.qa.testcases.ContactsPageTest"></class>
+</classes>
+</test>
+</suite>

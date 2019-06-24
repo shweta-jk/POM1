@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"> <!-- thread-count="2" parallel="classes"> -->
+	<listeners>
+		<listener class-name="com.zohocrm.qa.ExtentReportListener.ExtentReportListener"/>
+<!-- <listener class-name="com.zohocrm.qa.testcases.Listclass"/> -->
+</listeners>
+	
+	<!-- <parameter name = "url" value="https://google.com"/> 
+	<parameter name = "emailid" value="manisha"/>  -->
+  <test name="Test POM">
+ 
+  <!-- <groups>
+      <run>
+        <include name="Home"/>
+        <exclude name="Deals"/>
+      </run>
+    </groups> --> 
+ 
+  	<classes>
+  	<!-- <class name="com.zohocrm.qa.testcases.Parameterstest"/> -->
+    <class name="com.zohocrm.qa.testcases.LoginPageTest"/>
+     <!--<class name="com.zohocrm.qa.testcases.ContactsPageTest"/>
+      <class name="javaBasics.checkmethod"/> 
+      <class name="com.zohocrm.qa.testcases.HomePageTest"/>  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

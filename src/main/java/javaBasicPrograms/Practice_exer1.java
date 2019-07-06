@@ -37,7 +37,11 @@ public class Practice_exer1 {
 		secondsmall(nos);
 		secondlarge(nos);
 		
+		fibowithwhile(8);
+		sumofdigitsrecursion(100);	
+		reversesentence("My name is Alee");
 		
+		midletter("ShwetaKulkarni");
 		
 		
 		
@@ -166,9 +170,108 @@ public class Practice_exer1 {
 		}
 		
 		System.out.println("The first and second largest no is   "+large1+"  " +large2 );
+		System.out.println();
 	}
+	
+	
+	
+	public static void fibowithwhile(int a)
+	{
+		
+		int n1=0,n2=1,n3=0,i=2;
+		
+		System.out.print(n1+""+n2);
+		
+	while(i<=a)
+	{
+		n3=n1+n2;
+		n1=n2;
+		n2=n3;
+		i++;
+		
+		System.out.print(n3);
+
 		
 	}
+	System.out.println();
+	System.out.println();
+		
+	}
+	
+	public static void sumofdigitsrecursion(int num)
+	{
+		int sum=0;
+		int ldigit=0;
+		int actualnum=num;
+		
+		while(num>0)
+		{
+			ldigit=num%10;
+			sum=sum+ldigit;
+			num=num/10;
+			
+			
+		}
+		
+		System.out.println("The sum of digits using recursion for the no "+actualnum+"  is:"+sum);
+		
+		System.out.println();
+		
+	}
+	
+	public static void reversesentence(String str)
+	{
+		int k=0;
+		String q="";
+		
+		String [] newstr=str.split(" ");
+	
+		while(k<=3)
+		{
+			String m=newstr[k];
+			
+		for(int i=newstr[k].length()-1;i>=0;i--)
+		{
+			q=q+m.charAt(i);
+			
+		}
+		System.out.print(" "+q);
+		
+		  q=""; k++; }
+		 
+		/*for(int i=str.length()-1;i>=0;i--)
+		{
+			q=q+str.charAt(i);
+			
+		}
+		System.out.println("The reversed string is   "+q);*/
+		System.out.println();
+	}
+	
+	public static void midletter(String str)
+	{
+			int mid=str.length()/2;
+			System.out.println(mid);
+			
+			if(str.length()%2==1)
+			{
+				System.out.println(str.charAt(mid));
+			
+			}
+			
+			if(str.length()%2==0)
+				{
+				int mid1=mid-1;
+				System.out.println(str.charAt(mid1)+""+str.charAt(mid));
+				}
+			
+				
+		}
+		
+		
+	}
+		
+	
 	
 
 

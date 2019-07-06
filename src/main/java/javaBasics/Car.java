@@ -11,5 +11,15 @@ public class Car extends Vehicle{
 	public void stops() {
 		System.out.println("Car-------------------stops");
 	}
+	
+	public void engine()
+	{
+		System.out.println("Car's-------------------engine");
+	}
+	
+	public static void music()
+	{
+		System.out.println("Car's-------------------music");
+	}
 
 }

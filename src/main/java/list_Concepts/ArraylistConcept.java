@@ -55,8 +55,67 @@ public class ArraylistConcept {
 		}
 		
 
+	ArrayList num=new ArrayList();
+	
+	num.add(10);
+	num.add(20);
+	num.add(30);
+	num.add(40);
+	num.add(50);
+	num.set(3,80);
+	
+	passarraylist(num);
+	
+	ArrayList<String> strarray=new ArrayList<String>();
+	
+	strarray.add("amanda");
+	strarray.add("sandy");
+	strarray.add("nick");
+	strarray.add("Jules");
+	strarray.add("Watts");
+	
+	passstrarray(strarray);
+	
+	employee emp1=new employee("Sanda",35,"Qualitest");
+	employee emp2=new employee("Panda",38,"QTP");
+	employee emp3=new employee("maanda",36,"AWS");
+	employee emp4=new employee("donna",39,"Azure");
+	employee emp5=new employee("propaganda",40,"Cisco");
+	
+	ArrayList<employee> labour=new ArrayList<employee>();
+	labour.add(emp1);
+	labour.add(emp2);
+	labour.add(emp3);
+	labour.add(emp4);
+	labour.add(emp5);
+	
+	passemp(labour);
 	
 	
 	}
+	
+	
+	public static void passarraylist(ArrayList num)
+	{
+		System.out.println(num);
+	}
 
+	
+	public static void passstrarray(ArrayList strarray)
+	{
+		System.out.println(strarray);
+	}
+	
+	public static void passemp(ArrayList<employee> lab)
+	{	
+		Iterator<employee> it=lab.iterator();
+		while(it.hasNext())
+		{
+			employee l=it.next();
+			System.out.println(l.name+" "+l.age+" "+l.dept);
+			
+		}
+		
+	}
+	
 }

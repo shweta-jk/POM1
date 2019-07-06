@@ -1,6 +1,7 @@
 package javaBasicPrograms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class palindrome {
 
@@ -9,6 +10,7 @@ public class palindrome {
 		
 		ispalindrome(121);
 		revstring("Welcome To Shweta");
+		revstring1("Welcome To Shweta");
 		
 		String s= "BidaR";
 		String q= "";
@@ -31,6 +33,8 @@ public class palindrome {
 			 System.out.println("string is not a palindrome");
 		
 		 //Method2:
+		 
+		 System.out.println("stringbuffer");
 		 StringBuffer sb=new StringBuffer(s);
 		 System.out.println(sb.reverse());
 		 
@@ -72,7 +76,7 @@ public static void revstring(String str)
 	String [] str1=str.split(" ");
 	System.out.println(str1[0].toString()+str1[1].toString()+str1[2].toString());
 	
-	String [] str2= new String[3]    ;
+	String [] str2= new String[str1.length];
 	int count=0;
 	for(int i=str1.length-1;i>=0;i--)
 	{
@@ -85,6 +89,25 @@ public static void revstring(String str)
 	System.out.println("The reversed string is    " + str2[0].toString()+str2[1].toString()+str2[2].toString());
 }
 
+
+public static void revstring1(String str1)
+{
+	String [] str2=str1.split(" ");
+	int len=str2.length-1;
+	int count=0;
+	String [] str3=new String[str2.length];
+	for(int i=len;i>=0;i--)
+	{
+		str3[count]=str2[i];
+		count++;
+	}
+	for(int i=0;i<=len;i++)
+	{
+	System.out.print(str3[i].toString() );
+	}
+	
+	System.out.println();
+}
 
 public static void fibonacciseries(int a)
 {	

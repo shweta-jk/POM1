@@ -12,6 +12,7 @@ public class TestCar {
 		b.stops();
 		b.theftsafety();
 		b.engine();
+		Car.music();
 		
 		System.out.println("******************");
 		Car c=new Car();
@@ -24,14 +25,14 @@ public class TestCar {
 		c1.starts();
 		c1.stops();
 		c1.engine();
-		//c1.theftsafety(); cannot be accessed theftsafety is unique to the child,only common methods can be executed.
+		//c1.theftsafety(); //cannot be accessed theftsafety is unique to the child,only common methods can be executed.
 		
 		
 		//Down Casting
 		//BMWCar b1=(BMWCar)new Car();//gives ClasscastException;
 		
 		BMWCar b1=new BMWCar(10);//right method of calling the constructor
-		//b1.BMWCar(10);constructor cannot be called like this
+		//b1.BMWCar(10);//constructor cannot be called like this
 		
 		
 		

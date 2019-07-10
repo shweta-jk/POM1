@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zohocrm.qa.testcases.ContactsPageTest">
+      <class name="list_Concepts1.windowtab">
         <methods>
-          <include name="clickondotstest"/>
-          <include name="SetUp"/>
-          <include name="teardown"/>
+          <include name="dynamictab"/>
         </methods>
-      </class> <!-- com.zohocrm.qa.testcases.ContactsPageTest -->
+      </class> <!-- list_Concepts1.windowtab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

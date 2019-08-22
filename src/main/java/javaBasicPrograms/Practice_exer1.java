@@ -42,6 +42,7 @@ public class Practice_exer1 {
 		reversesentence("My name is Alee");
 		
 		midletter("ShwetaKulkarni");
+		midword("Java is a good programming language");
 		
 		
 		
@@ -268,10 +269,27 @@ public class Practice_exer1 {
 				
 		}
 		
+	
+	public static void midword(String str)
+	{
+		int count=0;
+		String [] str1=str.split(" ");
 		
-	}
+			int mid=str1.length/2;
+	
+			if(str1.length%2==1)
+			{
+				System.out.println("mid word is:"   +str1[mid]);
+			}
+			else if(str1.length%2==0)
+			{
+				System.out.println("mid word is:"   +str1[mid-1]+" "+str1[mid]);
+			}
+		}
 		
 	
+		
+}	
 	
 
 

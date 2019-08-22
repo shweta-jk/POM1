@@ -9,9 +9,14 @@ public abstract class Abstractclass {
 	 * Abstract class can have any type of variable int,static,final
 	 * In Interface the vriables are final and static by default 
 	 */
+	int x;
+	public Abstractclass(int a)
+	{
+		this.x=a;
+	}
 	
 	int ifsccode=1234;
-	public abstract void loan();
+	public abstract  void loan();
 	
 	
 	public void credit()
@@ -24,6 +29,10 @@ public abstract class Abstractclass {
 		System.out.println("abstract class debit method");
 	}
 	
+	public static void money()
+	{
+		System.out.println("abstract class money method");
+	}
 	
 
 }

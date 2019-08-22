@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="list_Concepts1.windowtab">
+      <class name="com.zohocrm.qa.testcases.LoginPageTest">
         <methods>
-          <include name="dynamictab"/>
+          <include name="validateloginpagetitleTest"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="LoginTest"/>
         </methods>
-      </class> <!-- list_Concepts1.windowtab -->
+      </class> <!-- com.zohocrm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

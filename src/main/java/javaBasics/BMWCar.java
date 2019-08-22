@@ -22,11 +22,12 @@ public class BMWCar extends Car {
 		System.out.println("BMW car--------stops");
 	}
 	
-	public void theftsafety()
+	public static void theftsafety()
 	{
 		System.out.println("BMW special feature");
 	}
-
+	
+	
 	
 
 }

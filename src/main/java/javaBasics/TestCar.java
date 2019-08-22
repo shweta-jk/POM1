@@ -10,9 +10,9 @@ public class TestCar {
 		BMWCar b=new BMWCar();
 		b.starts();
 		b.stops();
-		b.theftsafety();
+		BMWCar.theftsafety();
 		b.engine();
-		Car.music();
+		b.music();
 		
 		System.out.println("******************");
 		Car c=new Car();

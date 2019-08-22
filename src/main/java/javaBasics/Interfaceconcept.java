@@ -9,6 +9,7 @@ public interface Interfaceconcept {
 	 
 	 public void transfermoney();
 	 
+	 
 	 /*only method declaration no body
 	  * in interface we can declare variables which are static by default
 	  * Variables cannot be changed,its final/constant in nature

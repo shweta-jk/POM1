@@ -56,7 +56,7 @@ public class Stringprograms {
 	{
 		String s1=str;
 		
-		int len=s1.length();
+		
 		for(int i=0;i<=s1.length()-1;i++)
 		{
 			char us=s1.charAt(i);
@@ -69,7 +69,7 @@ public class Stringprograms {
 				us=(char)(us+32);
 			System.out.print(us);
 			}
-			}
+		}
 	}
 	
 	public static void replacechar(String str)
@@ -78,7 +78,8 @@ public class Stringprograms {
 		for(int i=0;i<=str.length()-1;i++)
 		{
 			
-				 s=str.replace('y', 'e');
+				 s=str.replace('y','e');
+				 
 					
 		}
 		
@@ -120,7 +121,7 @@ public class Stringprograms {
 	public static void toggle(String str)
 	{
 		int k=0;
-		char s2='a';
+		char s2=' ';
 		String ts="a";
 		String s="b";
 		String [] arrstr=str.split(" ");

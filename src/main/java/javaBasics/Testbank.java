@@ -15,7 +15,7 @@ public class Testbank {
 		s.educationloan();
 		//System.out.println(s.ifsccode);
 		
-		ICICIbank ic=new ICICIbank();
+		ICICIbank ic=new ICICIbank(0);
 		System.out.println(ic.ifsccode);
 		
 		

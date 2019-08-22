@@ -28,7 +28,7 @@ public class TestBase {
 		try {
 			
 			prop=new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\skulkarni74\\eclipse-workspace\\POM1\\src\\main\\java\\com\\zohocrm\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\shwet\\OneDrive\\Documents\\POM_copy\\POM1\\src\\main\\java\\com\\zohocrm\\qa\\config\\config.properties");
 			prop.load(ip);
 			
 		}catch(FileNotFoundException e)
@@ -50,7 +50,7 @@ public class TestBase {
 		String browsername=prop.getProperty("browser");
 		if(browsername.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\skulkarni74\\Downloads\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 			driver=new ChromeDriver();
 			
 		}else if(browsername.equals("Firefox"))
